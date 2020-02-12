@@ -13,6 +13,7 @@
 	#move the $v0 value to $t0	
 	move $t0,$v0
 	#display the message	
+	
 	li $v0,4
 	la $a0,message
 	syscall
