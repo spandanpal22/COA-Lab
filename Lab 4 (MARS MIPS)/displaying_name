@@ -1,0 +1,12 @@
+.data
+	firstName: .asciiz "Spandan "
+	lastName: .asciiz "Pal"
+	
+.text
+	li $v0,4
+	la $a0,firstName
+	syscall
+	
+	li $v0,4
+	la $a0,lastName
+	syscall
