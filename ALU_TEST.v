@@ -25,7 +25,7 @@
 module ALU_TEST;
 
 	// Inputs
-	reg [2:0] S;
+	reg [3:0] S;
 	reg [3:0] A;
 	reg [3:0] B;
 
@@ -39,17 +39,18 @@ module ALU_TEST;
 		.B(B), 
 		.result(result)
 	);
-reg[2:0] i;
+reg[3:0] i;
+
 	initial begin
 		// Initialize Inputs
 		// Wait 100 ns for global reset to finish
 		
-		for(i=0;i<8;i=i+3'b001)
+		for(i=0;i<16;i=i+4'b0001)
 			begin
 				S=i;
 				A=3;
 				B=4;
-				#100;
+				#10;
 			end
         
 		// Add stimulus here
