@@ -1,3 +1,3 @@
 # COA-Lab
 
-Codes useful fo COA Labs
+Codes useful for Computer Organization and Architecture Labs.
